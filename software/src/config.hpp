@@ -88,6 +88,8 @@
 // Rt - resistance of sensor in max temperature [ohm]
 // Rm - resistance of sensor in temperature, that charger should turn on
 //
+// Set MAX_BATTERY_TMP to 1025 if your battery do not have temperature sensor
+//
 // Default values:
 // MAX_BATTERY_TMP - 360 (about 50 Celsius degrees)
 // BATTERY_TMP_HYSTERESIS - 85
