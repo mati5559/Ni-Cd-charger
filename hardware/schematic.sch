@@ -21715,10 +21715,10 @@ Source: www.kingbright.com</description>
 <part name="L1" library="inductors" library_urn="urn:adsk.eagle:library:243" deviceset="SFT1240" device="" package3d_urn="urn:adsk.eagle:package:15111/1" value="68u"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BYV32" device="" package3d_urn="urn:adsk.eagle:package:43372/3" value="MBR10100FCT"/>
-<part name="C9" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="10n"/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="2m2"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="2m2"/>
-<part name="C13" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n"/>
+<part name="C9" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="10n 50V"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="2m2 50V"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="2m2 50V"/>
+<part name="C13" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n 50V"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -21741,16 +21741,16 @@ Source: www.kingbright.com</description>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="4k7"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BYV32" device="" package3d_urn="urn:adsk.eagle:package:43372/3" value="MBR10100FCT"/>
-<part name="C14" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n"/>
+<part name="C14" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n 50V"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="10R"/>
-<part name="C15" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n"/>
+<part name="C15" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n 50V"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C16" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n"/>
-<part name="C17" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="10n"/>
+<part name="C17" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="10n 50V"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="10R"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C18" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n"/>
+<part name="C18" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100n 50V"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="10R"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -21794,7 +21794,7 @@ Source: www.kingbright.com</description>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-5" package3d_urn="urn:adsk.eagle:package:23344/1" value="10u"/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="8k2"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="8k2 0,5W"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="4k7"/>
@@ -21949,19 +21949,19 @@ sensors</text>
 </instance>
 <instance part="C9" gate="G$1" x="180.34" y="162.56" smashed="yes">
 <attribute name="NAME" x="186.436" y="162.179" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="186.436" y="159.639" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="191.516" y="159.639" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C11" gate="G$1" x="193.04" y="157.48" smashed="yes">
 <attribute name="NAME" x="194.183" y="157.9626" size="1.778" layer="95"/>
-<attribute name="VALUE" x="194.183" y="152.8826" size="1.778" layer="96"/>
+<attribute name="VALUE" x="197.6374" y="143.383" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C12" gate="G$1" x="203.2" y="157.48" smashed="yes">
 <attribute name="NAME" x="204.343" y="157.9626" size="1.778" layer="95"/>
-<attribute name="VALUE" x="204.343" y="152.8826" size="1.778" layer="96"/>
+<attribute name="VALUE" x="207.7974" y="143.383" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C13" gate="G$1" x="213.36" y="157.48" smashed="yes">
 <attribute name="NAME" x="214.884" y="157.861" size="1.778" layer="95"/>
-<attribute name="VALUE" x="214.884" y="152.781" size="1.778" layer="96"/>
+<attribute name="VALUE" x="218.059" y="143.764" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND10" gate="1" x="193.04" y="124.46" smashed="yes">
 <attribute name="VALUE" x="190.5" y="121.92" size="1.778" layer="96"/>
@@ -22071,7 +22071,7 @@ sensors</text>
 </instance>
 <instance part="C17" gate="G$1" x="180.34" y="149.86" smashed="yes">
 <attribute name="NAME" x="186.436" y="146.939" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="186.436" y="144.399" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="191.516" y="144.399" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R9" gate="G$1" x="180.34" y="137.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="178.8414" y="133.35" size="1.778" layer="95" rot="R90"/>
@@ -22082,7 +22082,7 @@ sensors</text>
 </instance>
 <instance part="C18" gate="G$1" x="299.72" y="162.56" smashed="yes">
 <attribute name="NAME" x="308.356" y="159.639" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="308.356" y="162.179" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="313.436" y="162.179" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R10" gate="G$1" x="299.72" y="149.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="303.53" y="148.8186" size="1.778" layer="95"/>
