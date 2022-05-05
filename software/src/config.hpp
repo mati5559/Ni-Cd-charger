@@ -16,18 +16,6 @@
 #ifndef CONFIG_HPP_
 #define CONFIG_HPP_
 
-// Amount of measurements per one voltage read
-//
-// To provide high accuracy and cancel noise
-// this program do a few measurements and compute average of them
-// (see src/adc.cpp).
-//
-// Each measurement takes 5 ms.
-//
-// 10-15 is optimal value
-#define VOL_ACCURACY 12
-
-
 
 
 // Delta V

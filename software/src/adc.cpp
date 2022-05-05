@@ -24,73 +24,18 @@ namespace adc
 		ADCSRB = 0b00000000;
 	}
 
-
-	int read_voltage()
+	int read_adc(uint8_t channel)
 	{
-		// check if ADC input is set to 1
-		if(ADMUX != 0b00000001)
-		{
-			ADMUX = 0b00000001;
-			_delay_ms(5);
-		}
-		unsigned long int result = 0;
+		// Choose channel and reference voltage (AVcc with external capacitor)
+		ADMUX = 0b01000000 | channel;
 
-		// do a few measurements
-		for(int a = 0; a<VOL_ACCURACY; a++)
-		{
-			result += ADC;
-			_delay_ms(5);
-		}
+		// Start conversion
+		ADCSRA |= 0b01000000;
 
-		// compute and return average of all measurements
-		result /= VOL_ACCURACY;
-		return (int) result;
-	}
+		// Wait until conversion is done
+		while ((ADCSRA & 0b00010000) == 0) {};
 
-	int read_battery_temp()
-	{
-		// check if ADC input is set to 3
-		if(ADMUX != 0b00000011)
-		{
-			ADMUX = 0b00000011;
-			_delay_ms(5);
-		}
-		unsigned long int result = 0;
-
-		// do a few measurements
-		for(int a = 0; a<5; a++)
-		{
-			result += ADC;
-			_delay_ms(5);
-		}
-
-		// compute and return average of all measurements
-		result /= 5;
-		return (int) result;
-	}
-
-
-	int read_transistor_temp()
-	{
-		// check if ADC input is set to 2
-		if(ADMUX != 0b00000010)
-		{
-			ADMUX = 0b00000010;
-			_delay_ms(5);
-		}
-
-		unsigned long int result = 0;
-
-		// do a few measurements
-		for(int a = 0; a<5; a++)
-		{
-			result += ADC;
-			_delay_ms(5);
-		}
-
-		// compute and return average of all measurements
-		result /= 5;
-		return (int) result;
+		return ADC;
 	}
 }
 

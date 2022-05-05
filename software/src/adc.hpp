@@ -22,12 +22,14 @@
 #include "config.hpp"
 
 
+#define READ_TRANSISTOR_TEMP adc::read_adc(2)
+#define READ_BATTERY_TEMP adc::read_adc(3)
+#define READ_BATTERY_VOLTAGE adc::read_adc(1)
+
 namespace adc
 {
-	extern int read_voltage();
-	extern int read_battery_temp();
-	extern int read_transistor_temp();
-	extern void init();
+	void init();
+	int read_adc(uint8_t channel);
 }
 
 

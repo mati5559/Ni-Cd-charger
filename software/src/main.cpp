@@ -56,7 +56,7 @@ int main()
 	CHG_OFF;
 
 	// Wait for battery connection
-	while(adc::read_battery_temp() < 20)
+	while(READ_BATTERY_TEMP < 20)
 	{
 		wdt_reset();
 	}
@@ -92,7 +92,7 @@ int main()
 
 
 		// measure actual battery voltage
-		int vol_actual = adc::read_voltage();
+		int vol_actual = READ_BATTERY_VOLTAGE;
 
 
 		// over voltage protection - turn off charger and light up error diode when voltage is too high
@@ -127,13 +127,13 @@ int main()
 			thread_1 = 0;
 
 			// checking if battery temperature is too high
-			if(adc::read_battery_temp() > MAX_BATTERY_TMP)
+			if(READ_BATTERY_TEMP > MAX_BATTERY_TMP)
 			{
 				// turn off charger
 				CHG_OFF;
 
 				// blink error diode
-				while(adc::read_battery_temp() > (MAX_BATTERY_TMP - BATTERY_TMP_HYSTERESIS))
+				while(READ_BATTERY_TEMP > (MAX_BATTERY_TMP - BATTERY_TMP_HYSTERESIS))
 				{
 					ERR_DIODE_ON;
 
@@ -157,13 +157,13 @@ int main()
 
 
 			// checking if transistor temperature is too high
-			if(adc::read_transistor_temp() > MAX_TRANSISTOR_TMP)
+			if(READ_TRANSISTOR_TEMP > MAX_TRANSISTOR_TMP)
 			{
 				// turn off charger
 				CHG_OFF;
 
 				// blink error diode
-				while(adc::read_transistor_temp() > (MAX_TRANSISTOR_TMP - TRANSISTOR_TMP_HYSTERESIS))
+				while(READ_TRANSISTOR_TEMP > (MAX_TRANSISTOR_TMP - TRANSISTOR_TMP_HYSTERESIS))
 				{
 					ERR_DIODE_ON;
 

@@ -19,7 +19,7 @@ Other parameters can be modified in config.hpp file before programming Attiny13.
 1. Connect power supply to X1 screw clamp (20V 4A).
 2. Connect battery to X2 screw clamp and temperature sensor to pin 3 and 4 of JP1. (short pin 3 and 4 of JP1 if your battery do not have temperature sensor)
 3. LED1 should light up.
-4. Charging is ended when LED1 stop lighting and LED2 is not lighting or blinking.
+4. Charging is ended when both LEDs are not lighting.
 
 If LED2 is blinking it seems that over temperature protection was activated. You should wait a while to cool down. Charger will automatically turn on.
 If LED2 lights constantly it seems that something went wrong (for example battery was disconnected, is dead or charger is broken). You should turn off power supply for a while, make sure that all is connected properly and turn on power supply. 
